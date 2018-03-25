@@ -21,6 +21,10 @@ const postSchema= new schema({
     link:{
         type:String,
         required:true
+    },
+    image_path:{
+        type:String,
+        required:true
     }
 })
 

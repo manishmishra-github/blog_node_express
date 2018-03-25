@@ -20,8 +20,9 @@ app.use(session({
 
 
 //body-parser middlewares
-app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
 
 //express-handlebars middlewares
 app.use(express.static(path.join(__dirname,'public')));
